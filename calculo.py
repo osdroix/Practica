@@ -1,4 +1,5 @@
 def suma(a, b):
+    print("Sumando...")
     return a + b
 
 def resta(a, b):
