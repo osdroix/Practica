@@ -29,7 +29,7 @@
                             Pruébalo con un número, un string, un booleano, 
                             un objeto y un undefined.
                         </label>
-                        <form class="mt-3">
+                        <form id="formReto1" class="mt-3">
                             <div class="mb-3">
                                 <label for="inputVar" class="form-label">Ingresa un valor</label>
                                 <input type="text" class="form-control" id="inputVar" aria-describedby="roX">
@@ -39,6 +39,160 @@
                             </div>
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reto 2 -->
+            <div class="col-lg-8 mt-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <label class="form-label">
+                            Reto 2:
+                            <br> 
+                            Calcula el área y el perímetro de un círculo. 
+                            Declara una constante PI = 3.14159. 
+                            Dado un radio r, usa los operadores ** (exponente) y * para obtener los resultados.
+                        </label>
+                        <form id="formCircle" class="mt-3">
+                            <div class="mb-3">
+                                <label for="inputRadius" class="form-label">Ingresa el radio (r)</label>
+                                <input type="number" step="any" class="form-control" id="inputRadius" placeholder="Ej: 5">
+                            </div>
+                            <div class="mb-3" style="display: none;">
+                                <textarea class="form-control" id="resultCircle" rows="3" readonly></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Calcular</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reto 3 -->
+            <div class="col-lg-8 mt-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <label class="form-label">
+                            Reto 3:
+                            <br> 
+                            Crea una función llamada <code>esPalindromo</code> que reciba una palabra y devuelva <code>true</code> si se lee igual al derecho que al revés (ej: "radar"), ignorando mayúsculas.
+                        </label>
+                        <form id="formPalindrome" class="mt-3">
+                            <div class="mb-3">
+                                <label for="inputWord" class="form-label">Ingresa una palabra</label>
+                                <input type="text" class="form-control" id="inputWord" placeholder="Ej: radar">
+                            </div>
+                            <div class="mb-3" style="display: none;">
+                                <textarea class="form-control" id="resultPalindrome" rows="3" readonly></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Verificar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reto 4 -->
+            <div class="col-lg-8 mt-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <label class="form-label">
+                            Reto 4:
+                            <br> 
+                            Escribe un bucle for que recorra los números del 1 al 20. 
+                            Si el número es divisible por 3, imprime "Fizz". 
+                            Si es divisible por 5, imprime "Buzz". 
+                            Si es por ambos, imprime "FizzBuzz".
+                        </label>
+                        <form id="formFizzBuzz" class="mt-3">
+                            <div class="mb-3" style="display: none;">
+                                <textarea class="form-control" id="resultFizzBuzz" rows="10" readonly></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Ejecutar FizzBuzz</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reto 5 -->
+            <div class="col-lg-8 mt-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <label class="form-label">
+                            Reto 5:
+                            <br> 
+                            Dado el array <code>[10, 5, 8, 20, 2]</code>, usa métodos de array para: 
+                            <ol>
+                                <li>Ordenarlos de menor a mayor.</li>
+                                <li>Eliminar el número más pequeño.</li>
+                                <li>Sumar todos los números restantes usando <code>.reduce()</code>.</li>
+                            </ol>
+                        </label>
+                        <form id="formArray" class="mt-3">
+                            <div class="mb-3" style="display: none;">
+                                <textarea class="form-control" id="resultArray" rows="5" readonly></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Procesar Array</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reto 6 -->
+            <div class="col-lg-8 mt-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <label class="form-label">
+                            Reto 6:
+                            <br> 
+                            Crea una función que intente convertir un string a un objeto JSON usando <code>JSON.parse()</code>. 
+                            En el <code>catch</code>, imprime "Error de formato". 
+                            En el <code>finally</code>, imprime "Intento de parseo finalizado".
+                        </label>
+                        <form id="formJson" class="mt-3">
+                            <div class="mb-3">
+                                <label for="inputJson" class="form-label">Ingresa un JSON string</label>
+                                <input type="text" class="form-control" id="inputJson" placeholder='Ej: {"nombre": "Juan"}'>
+                            </div>
+                            <div class="mb-3" style="display: none;">
+                                <textarea class="form-control" id="resultJson" rows="3" readonly></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Parsear JSON</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reto 7 -->
+            <div class="col-lg-8 mt-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <label class="form-label">
+                            Reto 7:
+                            <br> 
+                            Crea una función <code>validarEdad(edad)</code>. Si la edad es menor a 18, lanza un error (<code>throw</code>) con el mensaje "Acceso denegado: Menor de edad".
+                        </label>
+                        <form id="formEdad" class="mt-3">
+                            <div class="mb-3">
+                                <label for="inputEdad" class="form-label">Ingresa tu edad</label>
+                                <input type="number" class="form-control" id="inputEdad" placeholder="Ej: 20">
+                            </div>
+                            <div class="mb-3" style="display: none;">
+                                <textarea class="form-control" id="resultEdad" rows="3" readonly></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Validar Edad</button>
                             </div>
                         </form>
                     </div>
